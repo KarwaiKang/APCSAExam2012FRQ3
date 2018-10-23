@@ -8,6 +8,20 @@ public class HorseBarn {
         this.spaces = horses;
     }
 
+    public String toString() {
+        String output = "";
+        for (int i = 0; i < this.spaces.length; i++) {
+            Horse horse = this.spaces[i];
+            output += i + ". ";
+            if (horse != null)
+                output += horse.getName() + ", weighs " + horse.getWeight();
+            else
+                output += "[empty]";
+            output += "\n";
+        }
+        return output;
+    }
+
     /** Returns the index of the space that contains the horse with the specified name.
      * Precondition: No two horses in the barn have the same name.
      * @param name the name of the horse to find
