@@ -14,7 +14,7 @@ public class HorseBarn {
             Horse horse = this.spaces[i];
             output += i + ". ";
             if (horse != null)
-                output += horse.getName() + ", weighs " + horse.getWeight();
+                output += horse.toString();
             else
                 output += "[empty]";
             output += "\n";
