@@ -1,8 +1,8 @@
-public class Mustang implements Horse {
+public class Brumby implements Horse {
     private String name, type;
     private int weight;
 
-    public Mustang(String name, int weight) {
+    public Brumby(String name, int weight) {
         this.name = name;
         this.weight = weight;
         this.type = this.getClass().toString().substring(6);
